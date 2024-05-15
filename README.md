@@ -1,3 +1,5 @@
+# InfinityApp
+
 This is an interface and API that I created for the Columbia's CSEE 4119 Computer Networks. The application implements a blockchain currency application where users can buy, sell, and transfer currency.  
 
 ## Code Execution Instructions

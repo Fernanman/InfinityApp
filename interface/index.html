@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Infinity - Login</title>
+        <meta name="description" content="Infinty Application">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="Fav.png">
+        <link rel="stylesheet" href="style.css">        
+        <script defer src="form.js"></script>
+    </head>
+    <body>
+        <div class="logo">
+            <img src="Logo.png">
+        </div>
+        <div class="wrapper">
+            <form action="/" method="GET" id="form">
+                <h1>Login</h1>
+
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <p id="error">The input public or private signature was incorrect.</p>
+                    </div>
+                </div>
+
+                <div class="box center">
+                        <div class="input">
+                            <div id="error"></div>
+                            <input id="pub" type="text" placeholder="Public Signature" required>
+                        </div>
+                        <div class="input">
+                            <input id="priv" type="password" placeholder="Private Signature" required>    
+                        </div>
+
+                        <button type="submit" class="btn" id="submit">Login</button>
+                        <p class="reg"><a href="register.html" >Register</a></p>
+                </div>
+            </form>
+        </div>
+        
+    </body>
+</html>

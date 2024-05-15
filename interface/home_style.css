@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* For some reason this fixed a problem where the header wasn't taking the full width.*/
+    background: url('background.png');
+    background-size: cover;
+    /* background-position: center; */
+}
+
+/* When using a class use . */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden; /* If something goes outside of a div, it'll be hidden and there won't be a scroll */
+}   
+
+.column {
+    float: left;
+    width: 50%;
+    overflow: hidden; 
+}
+
+header {
+    /* padding-top: 30px; */
+    min-height: 70px;
+}
+
+#logo {
+    width: 502px;
+    height: auto;
+    margin-top: 20px;
+    /* Centering div */
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.welcome {
+    font-size: 30px;
+    float: left;
+    /* margin-right: 200px; */
+    margin-top: 40px;
+    position: absolute;
+    top: 90px;
+    left: 30px;
+    /* bottom: 10px; */
+}
+
+.balance .bal_type {
+    font-weight: bold;
+}
+
+.balance {
+    width: fit-content;
+    height: 100px;
+    padding: 30px 30px;
+    border: 2px solid rgba(10, 10, 10, .2);
+    font-size: 30px;
+    float: left;
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+#user_balance {
+    font-weight: bold;
+}
+
+input {
+    /* width: 100%;
+    height: 100%; */
+    justify-content: center;
+    background: transparent;
+    outline: none;
+    border: 2px solid rbga(0, 0, 0, .5);
+    border-radius: 40px;
+    padding: 20px 45px 20px 20px;
+}
+
+input::placeholder {
+    color: whitesmoke;
+    font-family: Verdana; 
+}
+
+.btn {
+    background: #2a2e2b;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rbga(0, 0, 0, .1);
+    cursor: pointer;
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 600; 
+}
+
+#logout_button {
+    height: 45px;
+    width: 68%;
+    margin-top: 8px;
+    margin-left: 25px;
+}
+
+.transactions {
+    padding-top: 60px;
+}
+
+.transactions form {
+    /* margin-top: 20px; */
+    margin-bottom: 40px;
+}
+
+#conversion {
+    padding-bottom: 20px;
+}
+
+#buy_button, #sell_button, #transfer_button {
+    height: 45px;
+    width: 20%;
+    margin-left: 10px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #b0b3b8;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 20%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.market_container {
+    max-width: fit-content;
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+}
+
+  #market_plot {
+    max-width: 60%;
+    max-height: 60%;
+  }
